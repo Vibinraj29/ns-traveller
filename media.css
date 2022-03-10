@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .img1 {
+        display: none;
+    }
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 130px;
+        height:208px;
+    }
+    div.desc {
+        padding:0px;
+        font-size:15;
+    }
+    .tab1{
+        font-size:10;
+    }
+	.remo1{
+		margin-top:-51px;
+	}
+	.tab{
+		width:20%;
+	}
+	.tab2{
+		font-size:10;
+}
+

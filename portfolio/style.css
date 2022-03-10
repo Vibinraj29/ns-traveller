@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman';
+    background:#fff;
+    color: #000;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('loader.gif') no-repeat center center;
+    z-index: 99999;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+.label1 {
+    font-family: Algerian;
+    position: fixed;
+    font-size: 30;
+    top: 15;
+    left: 50;
+    color:#fff;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+nav {
+    background:rgba(0,0,0,0.7);
+    height: 80px;
+    width: 100%;
+    position:fixed;
+}
+nav ul {
+    float: right;
+    margin-right: 60px;
+}
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 2px;
+    }
+
+        nav ul li a {
+            color: #f2f2f2;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            /* text-transform: uppercase; */
+            font-family: 'Poppins', sans-serif;
+            text-decoration:none;
+        }
+
+a.active, a:hover {
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top:21px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 27px;
+        padding-left: 25px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        margin-right: 40px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:rgba(0,0,0,0.7);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+        nav ul li a {
+            font-size: 20px;
+        }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("bg1.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Section 1 */
+section#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Abril Fatface', cursive;
+    color:#fff;
+}
+.lead1{
+    color:#fff;
+}
+#content1 {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+/*section2*/
+.header2{
+    color:#000;
+    position:relative;
+    top:75;
+    left:20;
+    font-size:50;
+
+}
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    margin-top:60px;
+    text-align:center;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+}
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+footer {
+    color: #fff;;
+    background-color: black;
+    text-align:center;
+}
